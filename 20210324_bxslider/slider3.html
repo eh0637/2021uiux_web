@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            var myslider = $('.slider').bxSlider({
+                auto:true,
+                pager:false
+            });
+        });
+    </script>
+    <style>
+        .pb30 { padding-bottom: 30px; !important;}
+        .pt30 {padding-top: 30px; !important; }
+        .eee {background: #eee;}
+        .container { width:1000px;  margin:0 auto;}
+        .container li img { width:100%; display:block;  }
+        #header {background: #ffba00; }
+        #header li { float:left; width:calc( 1000px / 6 ); }
+        #header li:hover {background: #ffe293; }
+        #header li a{text-align:center; display:block; line-height:40px; margin:0 auto; font-weight:bold;}
+        
+        #section1st li{ float:left; width:calc((1000px - 60px ) / 4 ); }
+        #section1st li + li{ margin-left: 20px; }
+        #section1st h2,
+        #section1st p { text-align: center; }
+        #section1st h2:after{content:""; width:100px; height:1px; background: #000; display:block; margin: 10px auto;;    }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <ul class="clearfix">
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+                <li><a href="#">menu6</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container pt30">
+              <ul class="slider">
+                <li><img src="../images/pc01.jpg" alt=""></li>
+                <li><img src="../images/pc02.jpg" alt=""></li>
+                <li><img src="../images/pc03.jpg" alt=""></li>
+            </ul>
+    </div>
+    <div class="eee pt30 pb30">
+        <section  class="container" id="section1st">
+            <h2>갤러리</h2>
+            <p class="pb30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, labore.</p>
+            <ul class="clearfix">
+                <li><img src="../images/testimg.jpg" alt=""></li>
+                <li><img src="../images/testimg.jpg" alt=""></li>
+                <li><img src="../images/testimg.jpg" alt=""></li>
+                <li><img src="../images/testimg.jpg" alt=""></li>
+            </ul>
+        </section>    
+    </div>
+        <section  class="container pt30 pb30" id="section1st">
+            <h2>갤러리</h2>
+            <p class="pb30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, labore.</p>
+            <ul class="clearfix">
+                <li><img src="../images/testimg.jpg" alt=""></li>
+                <li><img src="../images/testimg.jpg" alt=""></li>
+                <li><img src="../images/testimg.jpg" alt=""></li>
+                <li><img src="../images/testimg.jpg" alt=""></li>
+            </ul>
+        </section>  
+</body>
+</html>
