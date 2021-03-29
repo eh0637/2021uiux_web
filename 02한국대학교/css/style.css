@@ -3,7 +3,7 @@
 
 
 
-        .hWrap{ background-color:#0044af; height: 40px; }
+        .hWrap{ background-color:#0044af; height:  40px; }
         .hw { width:1200px; margin: 0 auto;}
         .menuT {float:left; }
         .menuT li { float:left; width:120px; line-height:40px; text-align:center;  background: #00163b; margin-right: 4px;      }
@@ -25,10 +25,13 @@
         .menu1st li a{ font-weight: normal; }        
         .menu1st li .fa-bars {background-color: #eee; padding:14px; }
         .menu1st li .fa-user {background-color:#00163b; padding:14px; color:#fff;  }
-#content{ border-image:url(../img/%EB%B0%B0%EA%B2%BD01.jpg); width:100%; margin: 0 auto;    }
-#content .bg {width: 100%; margin:0 auto; }
-.content1st { background: red; position:absolute;  }
 
+#content {background: #000;}
+/*#content{ background-image:url(../img/school01.jpg)no-repeat 50% 0%; width:100%; margin: 0 auto; background-size: cover;}*/
+.content{width: 1200px; margin: 0 auto; _position: relative;}
+.content1st { background: red;  position:absolute; width: 1200px;}
+.content1stW {float:left; }
+.content1stL {float:right; }
 
 
 
