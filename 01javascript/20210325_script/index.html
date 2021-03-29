@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>script</title>
-    <sclipt></sclipt>
+    <script>
+        var num = 1; //  좌항에서 우항이 아니라 우항에서 좌항 <- 이렇게 흐름 이해
+        var total = num + 10;//  좌항에서 우항이 아니라 우항에서 좌항 <- 이렇게 흐름 이해 total,num 는 변수
+        document.write(typeof 100  + "<br>");
+        document.write(typeof "100");
+        document.write("<p class='han'>" + typeof true + "</p>"); //클래스 ' ' (o) " " (x) 뒤에 뭐가 더 있을경우 "" 사용하면 에러 뜸
+        document.write(typeof num + "<br>"); //write하면 화면에 출력됨
+        document.write("전체합 : " + total)
+    </script>
 </head>
 <body>
-    <button type="button" onclick="alert('자바스크립트')">버튼클릭</button><!--    윈도우 관련 매소드-->
-    <button title="button" onclick='document.write("반갑습니다")'>문서출력</button><!--    문서 관련매소드-->
-    <script></script>
+
 </body>
 </html>
