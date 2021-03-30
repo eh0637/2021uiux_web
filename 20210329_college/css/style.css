@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+
+.pt30 { padding-top: 30px; !important}
+.pb30 { padding-bottom: ;: 30px; !important}
+.pl20 { padding-left:20px; !important}
+.pr20 { padding-right:20px; !important}
+
 /*contents*/
 #contents{
     height: 1300px;
@@ -10,7 +16,7 @@ background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg);
     padding: 100px 0;  
         }
 #contents .titleWrap {
-    width: 1200px;height: 260px; background: violet; margin: 0 auto;
+    width: 1200px;height: 260px; .background: violet; margin: 0 auto;
 margin-bottom: 50px;
 }
 .titleLeft{ float:left; }
@@ -50,13 +56,43 @@ margin-bottom: 50px;
 .btn { display: block; width: 170px; line-height: 40px; text-align: center;}
 
 
-#contents .container>ul>li:nth-child(2){height: 450px; overflow:hidden;  }
-#contents .container>ul>li:nth-child(2){}
+#contents .container>ul>li:nth-child(2){height: 450px; overflow:hidden; position: relative;  }
+
+.txtWrap2 { position:absolute; top: 100px;left: 50px; width: 200px; color:#fff; }
 
 
-#contents .container>ul>li:nth-child(3){}
-#contents .container>ul>li:nth-child(4){}
+#contents .container>ul>li:nth-child(3){ background: #00163b;}
+#contents .container>ul>li:nth-child(3) h3{ color:#fff; padding-bottom: 35px; }
+.section {display:block; text-align:center;  }
+.section li {float: left;  }
+.section img { margin-left: 20px;}
+.section li:first-child img,
+.section li:first-child p{ margin-left: 35px;}
+.section p{color: #fff;  }
+
+
+
+#contents .container>ul>li:nth-child(4){background: #1651b7;}
+#contents .container>ul>li:nth-child(4) h3 {color:#fff; }
+#contents .container>ul>li:nth-child(4) h3:after{content:""; display: block; width: 260px; height: 2px; background: #fff; margin: 10px 0;}
+.txtWrap4 li{ display: block;float:left; color:#fff; font-size: 10pt; padding-bottom: 15px;    }
+.txtWrap4 p img{ padding:4px 10px 4px 0;    }
+
+
 #contents .container>ul>li:nth-child(5){}
-#contents .container>ul>li:nth-child(6){background: red;}
+.section5 h3{padding-bottom: 20px;}
+.sec4Wrap4 { float: right;padding-right: 20px;}
+.sec4Wrap4 li {float: left; margin-left: 4px;}
+.section5 img {float: left; }
+.section5 p {float: right; padding-bottom: 30px;padding-right: 20px; font-size: 15px;}
+
+#contents .container>ul>li:nth-child(6){ }
+.section6 {position: relative;}
+.section6 p{position: absolute; bottom: 2px; background: rgba(0,0,0,0.7);width: 100%; line-height: 50px; color:#fff; text-align: center; font-weight: bold; }
+
+
 #contents .container>ul>li:nth-child(7){}
+
+.section7 { position: relative;}
+.section7 .in { position: absolute; top: 40%; left: 40%;}
 #contents .container>ul>li:nth-child(8){ width: 75%;}

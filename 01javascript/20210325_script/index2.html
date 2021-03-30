@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>script</title>
+    <script>
+        let st = "hello" + "javascript";
+        
+//        st = st + "!!"; , st += "!!";랑 같은 값
+        st += "!!";
+        
+//        st = st + "반갑습니다.";
+        st += "반갑습니다.";
+        
+        document.write(st+"1");
+        alert(st+"2"); //alert(st); 경고 창이 우선순위 윈도우 창 영향 팝업창 뜨는 순간 프로그램 실행 x
+        console.log(st+"3");
+    </script>
+</head>
+<body>
+    <div>
+        <script>
+            let tag = "<div>test</div>"
+            tag += "<img src='../../images/testimg.jpg'>"
+            
+            document.write(tag);
+        </script>
+    </div>
+</body>
+</html>
