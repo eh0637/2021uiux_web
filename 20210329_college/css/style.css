@@ -99,6 +99,7 @@ margin-bottom: 50px;
 
 .section7 { position: relative;}
 .section7 .in { position: absolute; top: 40%; left: 40%;}
+.section7 .in:hover {transform: scale(1.8);}
 #contents .container>ul>li:nth-child(8){ width: 75%;}
 
 
