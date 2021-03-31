@@ -146,9 +146,3 @@ margin-bottom: 50px;
         .menu1st li .fa-bars {background-color: #eee; padding:14px; }
         .menu1st li .fa-user {background-color:#00163b; padding:14px; color:#fff;  }
 
-#content {background: #000;}
-/*#content{ background-image:url(../img/school01.jpg)no-repeat 50% 0%; width:100%; margin: 0 auto; background-size: cover;}*/
-.content{width: 1200px; margin: 0 auto; _position: relative;}
-.content1st { background: red;  position:absolute; width: 1200px;}
-.content1stW {float:left; }
-.content1stL {float:right; }
