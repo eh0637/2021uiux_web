@@ -7,44 +7,73 @@
     <link rel="stylesheet" href="../css/reset.css">
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider();
+        });
+    </script>
+    
 </head>
+<style>
+    
+    .gnb{ width: 1000px; background:skyblue; margin: 0 auto; height: 40px; position: relative; z-index:1; }
+    .gnb>ul>li { float: left; width: 20%; position: relative;}
+    .gnb>ul>li> a { display: block;text-align: center;line-height: 40px; color:#fff; font-weight: bold; }
+    .gnb>ul>li:hover { background: #117198;}
+    
+    
+    .submenu {display: none; position: absolute; width: 100%;}
+    .gnb>ul>li:hover .submenu{display: block;}
+    .submenu li { line-height: 30px; }
+    .submenu li a { display: block; text-align: center; color:#fff; background: #770000; }
+    .submenu li a:hover { background: #2a4652; }
+    
+    .bx-wrapper {
+    -moz-box-shadow:  none;
+    -webkit-box-shadow:  none;
+    box-shadow:  none;
+    border:0 none;
+/*    background: #fff;*/
+}
+    
+</style>
 <body>
     <nav class="gnb">
         <ul class="clearfix">
             <li><a href="#">메뉴1</a>
-                <ul class="su">
+                <ul class="submenu">
                     <li><a href="#">s메뉴1</a></li>
                     <li><a href="#">s메뉴1</a></li>
                     <li><a href="#">s메뉴1</a></li>
                     <li><a href="#">s메뉴1</a></li>
                 </ul>
-            </li>">
+            </li>
             <li><a href="#">메뉴2</a>
-                <ul class="su">
+                <ul class="submenu">
                     <li><a href="#">s메뉴2</a></li>
                     <li><a href="#">s메뉴2</a></li>
                     <li><a href="#">s메뉴2</a></li>
                     <li><a href="#">s메뉴2</a></li>
                 </ul>
-            </li>">
+            </li>
             <li><a href="#">메뉴3</a>
-                <ul class="su">
+                <ul class="submenu">
                     <li><a href="#">s메뉴3</a></li>
                     <li><a href="#">s메뉴3</a></li>
                     <li><a href="#">s메뉴3</a></li>
                     <li><a href="#">s메뉴3</a></li>
                 </ul>
-            </li>">
+            </li>
             <li><a href="#">메뉴4</a>
-                <ul class="su">
+                <ul class="submenu">
                     <li><a href="#">s메뉴4</a></li>
                     <li><a href="#">s메뉴4</a></li>
                     <li><a href="#">s메뉴4</a></li>
                     <li><a href="#">s메뉴4</a></li>
                 </ul>
-            </li>">
+            </li>
             <li><a href="#">메뉴5</a>
-                <ul class="su">
+                <ul class="submenu">
                     <li><a href="#">s메뉴5</a></li>
                     <li><a href="#">s메뉴5</a></li>
                     <li><a href="#">s메뉴5</a></li>
@@ -53,5 +82,12 @@
             </li>
         </ul>
     </nav>
+    <div class="visualWrap">
+        <ul class="slider">
+            <li><img src="../images/pc01.jpg" alt=""></li>
+            <li><img src="../images/pc02.jpg" alt=""></li>
+            <li><img src="../images/pc03.jpg" alt=""></li>
+        </ul>
+    </div>
 </body>
 </html>

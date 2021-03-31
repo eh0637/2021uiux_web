@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>하이미디어</title>
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<style>
+    .uWrap {border-bottom: 1px solid #000; margin-bottom: 10px;}
+    .tmenu { width: 980px; margin: 0 auto; }
+    .tmenu ul {float: right; }
+    
+    .tmenu li { float: left; padding:0 10px; position: relative;}
+ 
+    .tmenu li:after { content:"";position: absolute;  width:1px; height: 10px; background: black; right:0; top:12px;    }
+    .tmenu li:last-child:after { content: ""; display: none;}
+
+    .tmenu li a { display: block; line-height: 30px; font-size: 12px; }
+    
+    #header h1 {text-align: center; margin-bottom: 20px;}
+    
+    .gnbWrap {background: skyblue;}
+    .gnbmenu {width: 980px; margin: 0 auto;}
+    .gnbmenu li { float: left; width:calc( 100% / 6 ) ; border-left:1px solid #fff; }
+    .gnbmenu li:last-child {border-right:1px solid #fff; }
+    .gnbmenu li a{ display: block; text-align: center; line-height: 40px;color:#fff; font-weight: bold; }
+    .gnbmenu li:hover{background: #000;}
+    
+    
+</style>
+<body>
+    <header id="header">
+        <div class="uWrap"><!--  100-->
+            <div class="tmenu clearfix"><!--               980-->
+                <ul class="clearfix">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Joun</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1>하이미디어</h1>
+        <div class="gnbWrap">
+            <ul class="clearfix gnbmenu">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">제품소개</a></li>
+                <li><a href="#">사업영역</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">사회공헌</a></li>
+                <li><a href="#">인재채용</a></li>
+            </ul>
+        </div>
+    </header>
+<!--    content-->
+<div class="visualWrap"> <!--#223a6a-->
+    <div class="visual">
+        <img src="images/main_slider_img.png" alt="">
+        <img src="images/main_slider_txt.png" alt="">
+    </div>
+</div>
+</body>
+</html>

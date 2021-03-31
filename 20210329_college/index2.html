@@ -13,8 +13,8 @@
         $(document).ready(function(){
             var mySlider = $('.slider').bxSlider({
                 auto:true,
-                pager:false,
                 controls:false
+            
             });
             $(".nextBtn").click(function(){
                 mySlider.goToNextSlide();
@@ -22,12 +22,17 @@
             $(".prevBtn").click(function(){
                 mySlider.goToPrevSlide();
             }); 
+          
+        });
+    </script>
+    <script>   
+        $(document).ready(function(){
             $('.slider2').bxSlider({
                 auto:true,
                 controls:false
             });
-          
         });
+        
     </script>
 </head>
 <body>
@@ -252,7 +257,31 @@
                 </li>
             </ul>
         </div>
-        
     </div>
+<!--    contents----------------->
+<footer id="footer">
+    <div class="footerWrap">
+        <div class="footerT">
+            <ul class="clearfix">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">한국대학교</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">이용정책</a></li>
+                <li><a href="#">입점/제휴문의및광고</a></li>
+                <li><a href="#">이메일 무단수집거부</a></li>
+            </ul>
+            </div>
+            <div class="footerB">
+                <ul>
+                    <li>
+                        <p> 대표자 : 홍길동 서울특별시 구로구 구로로300 (구로동 6가) 사업자등록번호:123-56-7890234 <br>
+                            통신판매업신고번호 : 제 1234-서울 구로구-1004호 개인정보책임자 : 홍길동    소비자피해보상보험<br>
+                            고객센터 : 1234-5678  FAX : 02-1234-5678   HANGUKUNIVERSITY @ GMIL.COM</p>
+                    </li>
+                    <li>COPYRIGHT ALL PIGHTSRESERVED</li>
+                </ul>
+            </div>
+    </div>
+</footer>
 </body>
 </html>
