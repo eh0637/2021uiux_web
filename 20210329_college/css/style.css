@@ -4,8 +4,8 @@
 .pt30 { padding-top: 30px; !important}
 .pb30 { padding-bottom: ;: 30px; !important}
 .pl20 { padding-left:20px; !important}
-.pr20 { padding-right:20px; !important}
-
+.pr20 { padding-right:20px; !important;}
+.pd {padding: 30px 20px 30px 20px; !important;}
 
 /*contents*/
 #contents{
@@ -72,10 +72,9 @@ margin-bottom: 50px;
 #contents .container>ul>li:nth-child(3){ background: #00163b;}
 #contents .container>ul>li:nth-child(3) h3{ color:#fff; padding-bottom: 35px; }
 .section {display:block; text-align:center;  }
-.section li {float: left;  }
-.section img { margin-left: 20px;}
-.section li:first-child img,
-.section li:first-child p{ margin-left: 35px;}
+.section li {float: left;  margin: 0 auto;}
+.section li img,{ margin-left: 0;}
+.section li + li {margin-left: 25px;}
 .section p{color: #fff;  }
 
 
@@ -83,16 +82,18 @@ margin-bottom: 50px;
 #contents .container>ul>li:nth-child(4){background: #1651b7;}
 #contents .container>ul>li:nth-child(4) h3 {color:#fff; }
 #contents .container>ul>li:nth-child(4) h3:after{content:""; display: block; width: 260px; height: 2px; background: #fff; margin: 10px 0;}
-.txtWrap4 li{ display: block;float:left; color:#fff; font-size: 10pt; padding-bottom: 15px;    }
-.txtWrap4 p img{ padding:4px 10px 4px 0;    }
+.txtWrap4 li{ color:#fff; font-size: 10pt;    }
+.txtWrap4 p img{ padding:4px 5px 4px 0;    }
+.txtWrap4 p { line-height: 30px;}
+span {float: right;}
 
 
 #contents .container>ul>li:nth-child(5){}
 .section5 h3{padding-bottom: 20px;}
-.sec4Wrap4 { float: right;padding-right: 20px;}
+.sec4Wrap4 { float: right;}
 .sec4Wrap4 li {float: left; margin-left: 4px;}
 .section5 img {float: left; }
-.section5 p {float: right; padding-bottom: 30px;padding-right: 20px; font-size: 15px;}
+.section5 p {float: right; padding-bottom: 25px;font-size: 15px;}
 
 #contents .container>ul>li:nth-child(6){ }
 .section6 {position: relative;}
@@ -113,16 +114,32 @@ margin-bottom: 50px;
     width: 100%;
     left:380px;
 }
-.slider2.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #f74237;
 }
 
-.txtWrap8{position:absolute; top: 40px; left: 50px; width: 500px; color:#f74237; }
+
+.txtWrap8 {position:absolute; top:0px; left: 50px; width:100%; color:#f74237; }
 .txtWrap8 h3 { font-size: 60px;}
 .txtWrap8 p { font-size: 30px;}
 .txtWrap8 a { background: #f74237;color:#fff; }
 
+.pagerT .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;}
 
+.pagerT .bx-wrapper .bx-pager.bx-default-pager a.active{ background: #0045ad;}
+.pagerB .bx-wrapper .bx-pager.bx-default-pager a.active{ background: #f74237;}
+
+
+
+.pagerB .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    top: 1px;
+    right: 20px;
+    width: 10%;
+    height: 10%;}
 
 /*header*/
 
