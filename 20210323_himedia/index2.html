@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>하이미디어</title>
@@ -26,6 +26,41 @@
     .gnbmenu li a{ display: block; text-align: center; line-height: 40px;color:#fff; font-weight: bold; }
     .gnbmenu li:hover{background: #000;}
     
+    
+    .visualWrap {height:400px;
+    background-color:#223a6a; overflow:hidden; background:url(images/main_bg01.jpg) no-repeat center; }
+    .visual{ width: 980px; margin: 0 auto;  position: relative;}
+    .visual .vimg1, 
+    .visual .vimg2 {position: absolute;} 
+    .visual .vimg1 { right: 0; top: -10px;}
+    .visual .vimg2 { left: 0; top: 80px;}
+    
+    .section { width: 980px; margin: 0 auto; margin-bottom: 30px;}
+    .section li {float: left; background: skyblue; text-align: center; width: calc( 100% / 5 );}
+    
+    .section li h3,.section li p { color:#fff; }
+    .section li h3{ margin-bottom: 5px;}
+    .section li p{ margin-bottom: 20px;}
+    
+    .section li:nth-child(2){ background: #3300a5;}
+    .section li:nth-child(3){ background: #006763;}
+    .section li:nth-child(4){ background: #ff0404;}
+    .section li:nth-child(5){ background: #6c1818;}
+    
+    .section2 { width: 980px; margin: 0 auto ; margin-bottom: 40px;}
+    .section2 li { float: left;  width:310px; margin-right:25px; }
+    .section2 li:last-child{margin-right: 0;}
+    .twtWrap{border: 1px solid #727272; padding: 20px; }
+    .twtWrap{border-top:none; }
+    .section2 img {display: block;}
+    
+    .section3 {width: 980px; margin: 0 auto; margin-bottom: 30px;}
+    .section3 li {float: left; width: 310px; margin-right: 25px;position: relative; border:1px solid #ddd; padding: 30px; }
+    .section3 li:last-child {margin-right: 0px;}
+    .txtWrap2 { float: left; width: 150px;}
+    .txtWrap2 p { margin-bottom: 10px;}
+    .txtWrap2 a {font-size: 12px; color:skyblue;}
+    .section3 img { position: absolute; right: -30px;} 
     
 </style>
 <body>
@@ -55,9 +90,93 @@
 <!--    content-->
 <div class="visualWrap"> <!--#223a6a-->
     <div class="visual">
-        <img src="images/main_slider_img.png" alt="">
-        <img src="images/main_slider_txt.png" alt="">
+        <img src="images/main_slider_img.png" alt="" class="vimg1">
+        <img src="images/main_slider_txt.png" alt="" class="vimg2">
     </div>
 </div>
+<div class="section">
+    <ul class="clearfix">
+        <li>
+            <img src="images/icon01.png" alt="아이콘">
+            <h3>사회공헌</h3>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+        <li>
+            <img src="images/icon02.png" alt="아이콘">
+            <h3>사회공헌</h3>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+        <li>
+            <img src="images/icon03.png" alt="아이콘">
+            <h3>사회공헌</h3>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+        <li>
+            <img src="images/icon04.png" alt="아이콘">
+            <h3>사회공헌</h3>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+        <li>
+            <img src="images/icon05.png" alt="아이콘">
+            <h3>사회공헌</h3>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+    </ul>
+</div>
+<div class="section2">
+    <ul class="clearfix">
+        <li>
+            <img src="images/content_img01.png" alt="하늘">
+            <div class="twtWrap">
+                <h3>회사개요</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, accusantium.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/content_img02.png" alt="하늘">
+            <div class="twtWrap">
+                <h3>회사개요</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, accusantium.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/content_img03.png" alt="하늘">
+            <div class="twtWrap">
+                <h3>회사개요</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, accusantium.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="section3">
+    <ul class="clearfix">
+        <li>
+            <div class="txtWrap2">
+                <h3>사보</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <img src="images/content_icon01.png" alt="">
+        </li>
+        <li>
+            <div class="txtWrap2">
+                <h3>사보</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <img src="images/content_icon01.png" alt="">
+        </li>
+        <li>
+            <div class="txtWrap2">
+                <h3>사보</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <img src="images/content_icon01.png" alt="">
+        </li>
+        
+    </ul>
+</div>
+
 </body>
 </html>

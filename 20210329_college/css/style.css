@@ -1,27 +1,27 @@
 @charset "utf-8";
 
 
-.pt30 { padding-top: 30px; !important}
-.pb30 { padding-bottom: ;: 30px; !important}
 .pl20 { padding-left:20px; !important}
 .pr20 { padding-right:20px; !important;}
-.pd {padding: 30px 20px 30px 20px; !important;}
+.pd {padding: 20px; !important;}
+
 
 /*contents*/
 #contents{
-    height: 1300px;
+    
 background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg);
         background-repeat:repeat,no-repeat;
     background-position:center;
     background-size: auto,cover;
-    padding: 100px 0;  
+    padding: 50px 0;  
         }
+
 #contents .titleWrap {
     width: 1200px; height: 145px; margin: 0 auto;
-margin-bottom: 50px;
+margin-bottom: 30px; display: block;
 }
 .titleLeft{ float:left; }
-#contents .titleLeft h2 {font-weight: bold; font-size: 50px;}
+#contents .titleLeft h2 {font-weight: bold; font-size: 60px;}
 #contents .titleLeft p {font-weight: normal; font-size: 30px;}
 #contents .titleWrap h2,
 #contents .titleWrap p{ color:#fff; }
@@ -36,7 +36,7 @@ margin-bottom: 50px;
     width: 1200px; margin: 0 auto; background: #fff;
 }
 #contents .container>ul>li { float: left; width: 25%; height: 225px; }
-#contents .container>ul>li:nth-child(2n){background: pink;}
+/*#contents .container>ul>li:nth-child(2n){background: pink;}*/
 #contents .container>ul>li:nth-child(1){ width:75%; height: 450px; overflow:hidden; position:relative;    }
 .bx-wrapper {
     -moz-box-shadow: none;
@@ -50,8 +50,8 @@ margin-bottom: 50px;
 .nextBtn, .prevBtn:hover { background:#000; }
 .nextBtn { right:0; }
 .prevBtn {left: 0;}
-.txtWrap{position:absolute; top: 100px; left: 50px; width: 500px; color:#1651b7; }
-.txtWrap h3 { font-size: 60px;}
+.txtWrap{position:absolute; top: 100px; left: 80px; width: 500px; color:#1651b7; }
+.txtWrap p { font-size: 60px; line-height: 70px; font-weight: bold; margin-bottom: 30px;}
 .txtWrap .btn { display: block; width: 170px; line-height: 40px; background: #192d4e; color:#fff; text-align: center;}
 
 .btn { display: block; width: 170px; line-height: 40px; text-align: center;}
@@ -63,14 +63,14 @@ margin-bottom: 50px;
 
 #contents .container>ul>li:nth-child(2){height: 450px; overflow:hidden; position: relative;  }
 
-.txtWrap2 { position:absolute; top: 100px;left: 50px; width: 200px; color:#fff; }
-.txtWrap2 h3 { font-size: 22pt; margin-bottom: 20px;}
-.txtWrap2 p {margin-bottom: 35px; font-size: 10pt;}
+.txtWrap2 { position:absolute; top: 100px;left: 50px; width: 200px; color:#fff; text-shadow:1px 1px  7px black;  }
+.txtWrap2 h3 { font-size: 23pt; margin-bottom: 30px;}
+.txtWrap2 p {margin-bottom: 30px; font-size: 10pt;}
 .txtWrap2 a { background: rgba(0,0,0,0.4);border:1px solid #fff; color:#fff;  }
 
 
 #contents .container>ul>li:nth-child(3){ background: #00163b;}
-#contents .container>ul>li:nth-child(3) h3{ color:#fff; padding-bottom: 35px; }
+#contents .container>ul>li:nth-child(3) h3{ color:#fff; padding-bottom: 30px; }
 .section {display:block; text-align:center;  }
 .section li {float: left;  margin: 0 auto;}
 .section li img,{ margin-left: 0;}
@@ -89,6 +89,7 @@ span {float: right;}
 
 
 #contents .container>ul>li:nth-child(5){}
+.section5{background: #fff; height: 100%;}
 .section5 h3{padding-bottom: 20px;}
 .sec4Wrap4 { float: right;}
 .sec4Wrap4 li {float: left; margin-left: 4px;}
@@ -103,8 +104,8 @@ span {float: right;}
 #contents .container>ul>li:nth-child(7){}
 
 .section7 { position: relative;}
-.section7 .in { position: absolute; top: 40%; left: 40%;}
-.section7 .in:hover {transform: scale(1.8);}
+.section7 .in { position: absolute; top: 40%; left: 40%;  }
+.section7 .in:hover {transform: scale(1.5);}
 #contents .container>ul>li:nth-child(8){ width: 75%;}
 
 
@@ -120,8 +121,8 @@ span {float: right;}
 
 
 .txtWrap8 {position:absolute; top:0px; left: 50px; width:100%; color:#f74237; }
-.txtWrap8 h3 { font-size: 60px;}
-.txtWrap8 p { font-size: 30px;}
+.txtWrap8 h3 { font-size: 60px; height: 70px; margin-bottom: 20px;}
+.txtWrap8 p { font-size:30px;  }
 .txtWrap8 a { background: #f74237;color:#fff; }
 
 .pagerT .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
@@ -162,7 +163,7 @@ span {float: right;}
         .menu1st {float:right;  }
         .menu1st ul{float:left; line-height:82px;  }
         .menu1st li {float:left; line-height:82px; margin-left:30px;   }
-        .menu1st li:last-child{margin-left:0; }
+        .menu1st .fas li:last-child{margin-left:0; }
         .menu1st li a{ font-weight: normal; }        
         .menu1st li .fa-bars {background-color: #eee; padding:14px; }
         .menu1st li .fa-user {background-color:#00163b; padding:14px; color:#fff;  }
