@@ -1,2 +1,61 @@
 @charset "utf-8";
 
+.headerWrap {background:#075593;}
+.headerTop { margin: 0 auto; width: 980px; height: 90px; background-image: url(../images/hea.jpg);}
+.headerTop h1 {width: 125px; height: 45px;background-image: url(../images/logo.png);  float: left; margin-top: 20px; }
+
+.headerWrap h1 a {display: block; text-indent: -999px; }
+
+
+input { border: none; margin-top: 20px;}
+ 
+.snssec {float: right;}
+.snssec p {color:#fff;  font-weight: bold; font-size: 26pt;}
+.snssec li {float:left; padding-left: 6px; line-height: 90px;}
+
+.headerB {background: #f8f8f8; border-bottom: 5px solid #0e73a7;}
+.headerB > .menu { margin: 0 auto; width: 980px;   margin: 0 auto; }
+.headerB > .menu li{ float: left; width:calc( 100% / 6) ;  background: #f8f8f8; border-left:1px solid #ededed; }
+.headerB > .menu li:last-child{border-right: 1px solid #ededed;}
+
+.menu li a{ display: block; line-height: 60px; text-align: center; font-weight: bold;}
+
+
+
+/*컨텐츠*/
+
+#content { 
+    background-image: url(../images/bg.jpg); width: 100%; height: 1240px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding: 60px 0; }
+
+.section {width: 980px; margin: 0 auto;position: relative;  }
+.secLeft { position: relative; z-index: 1; float: left; }
+.secLeft .form {padding-bottom: 15px; }
+.sec  {position: relative; }
+.sec li {float: left; height: 240px; width: 234px; margin-right: 15px; display: block;}
+.sec li:last-child{margin-right: 0;}
+.secLeft .form ul li{background: #fff;width: 484px; height: 300px; }
+.txtWrap{ background: #152630; position: absolute; bottom: 0; width: 234px; height: 50px; padding: 15px}
+.txtWrap p { display: block;color:#fff; float: left; }
+.txtWrap span { display: block;color:#6cbd61; float: right; }
+
+.secRight { float: right; position: absolute; top:-150px; right: -100px; }
+
+
+.sectxt1  h2 { font-size: 60px;}
+.sectxt1  p { font-size: 32px;}
+
+
+.section2 { width: 980px; margin: 0 auto; }
+.section2 li {background: #000; width: 234px; height: 240px; float: left;} 
+
+
+
+
+/*common*/
+
+pb15 { padding-bottom: 15px !important; }
+pr15 { padding-right:15px !important; }
