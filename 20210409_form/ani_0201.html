@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        html,body{height: 100%;}
+        body{
+            background:url(images/bg02.jpg) no-repeat center;
+            -webkit-background-size:cover ;
+            background-size:cover ;
+            
+        }
+        .wrap{
+            position: absolute;
+            left: 50%;top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .wrap label{
+            display: block;
+            width: 60px;
+            height: 20px;
+            background: skyblue;
+            background-image: url(images/searchtext.jpg);
+            text-indent: -9999px;
+            position: absolute; top: 15px; left: 10px;
+        }
+        .wrap .inp-search {
+            width: 400px; height: 50px; border-radius: 25px;
+            text-indent: 90px;
+        }
+        
+        .wrap .btn-search{
+            width: 40px;height: 40px;background-image: url(images/search.jpg);
+            background-repeat: no-repeat;
+            background-position:center;
+            background-color: #fff;
+            text-indent: -9999px;
+            border: none;
+            border-radius:50%; 
+            position: absolute; right: 5px;top: 50%;
+            transform: translateY(-50%)
+             
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="#">
+            <label for="search">search</label>
+            <input type="text" id="search" class="inp-search" placeholder="검색어를 입력하세요.">
+            <input type="submit" value="bottom" class="btn-search">
+        </form>
+    </div>
+</body>
+</html>
