@@ -1,20 +1,51 @@
 @charset "utf-8";
 
+body { margin:0; font-family:roboto; }
+
 .headerWrap {background:#075593;}
-.headerTop { margin: 0 auto; width: 980px; height: 90px; background-image: url(../images/hea.jpg);}
+.headerTop { margin: 0 auto; width: 981px; height: 90px; background-image: url(../images/hea.jpg);}
 .headerTop h1 {width: 125px; height: 45px;background-image: url(../images/logo.png);  float: left; margin-top: 20px; }
 
 .headerWrap h1 a {display: block; text-indent: -999px; }
 
+/*
+.searchWrap label {
+    display: block; width: 290px; height: 30px;
+    background-image: url(../images/SEARCH.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px; position: absolute;
+    top: 15px; left: 20px; z-index: 1;
+}
 
-input { border: none; margin-top: 20px;}
+.searchWrap .inp-search{
+      width: 400px; height: 50px;
+      border-radius: 25px; text-indent: 90px;
+      position: relative;
+    }
+     .searchWrap .inp-search:focus, .wrap .btn-search:focus{outline:none; }
+
+  .searchWrap .btn-search{
+      width: 40px;
+      height: 40px;
+      border: 2px solid #ddd; background-image: url(../images/Vector.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #fff;
+      text-indent: -9999px;
+      border-radius: 50%;
+      position: absolute; right: 3px; top: 50%; transform: translateY(-50%);
+      cursor: pointer;
+
+    }
+*/
+
  
 .snssec {float: right;}
 .snssec p {color:#fff;  font-weight: bold; font-size: 26pt;}
 .snssec li {float:left; padding-left: 6px; line-height: 90px;}
 
 .headerB {background: #f8f8f8; border-bottom: 5px solid #0e73a7;}
-.headerB > .menu { margin: 0 auto; width: 980px;   margin: 0 auto; }
+.headerB > .menu { margin: 0 auto; width: 981px;   margin: 0 auto; }
 .headerB > .menu li{ float: left; width:calc( 100% / 6) ;  background: #f8f8f8; border-left:1px solid #ededed; }
 .headerB > .menu li:last-child{border-right: 1px solid #ededed;}
 
@@ -31,9 +62,22 @@ background-position: center;
 background-size: cover;
 padding: 60px 0; }
 
-.section {width: 980px; margin: 0 auto;position: relative;  }
+.section {width: 981px; margin: 0 auto;position: relative; margin-bottom: 15px; }
 .secLeft { position: relative; z-index: 1; float: left; }
 .secLeft .form {padding-bottom: 15px; }
+fieldset{border:0 none;}
+legend { display: block; position: absolute; left: 0; top: -9999px;}
+.formWrap{width: 350px; margin: 0 auto; background: skyblue; padding:20px; background: #000;  }
+.formWrap label { display: block; padding: 5px 0;}
+.formWrap select{
+    display: block; width: 100%; height: 30px;
+}
+
+
+
+
+
+
 .sec  {position: relative; }
 .sec li {float: left; height: 240px; width: 234px; margin-right: 15px; display: block;}
 .sec li:last-child{margin-right: 0;}
@@ -42,18 +86,48 @@ padding: 60px 0; }
 .txtWrap p { display: block;color:#fff; float: left; }
 .txtWrap span { display: block;color:#6cbd61; float: right; }
 
-.secRight { float: right; position: absolute; top:-150px; right: -100px; }
 
 
+.secRight { float: right;}
+.secRight img {position: absolute;right: 20px;bottom: 1px;
+}
+
+.sectxt1 { left: -40px; z-index: 1; position:relative}
 .sectxt1  h2 { font-size: 60px;}
 .sectxt1  p { font-size: 32px;}
 
 
-.section2 { width: 980px; margin: 0 auto; }
-.section2 li {background: #000; width: 234px; height: 240px; float: left;} 
 
 
+.section2 { width: 981px; margin: 0 auto; margin-bottom: 15px; }
+.section2 li { float: left;background: #0f0; width: 234px; height: 240px; margin-right: 15px; position: relative;} 
+.section2 li:last-child {margin-right: 0;}
 
+.txtWrap02{ background: #539150; position: absolute; bottom: 0; width: 234px; height: 65px; padding: 15px}
+.txtWrap02 p { display: block;color:#fff; float: left; font-size: 14px; font-weight: bold;}
+.txtWrap02 .star { color: #e3a200; }
+
+.section2 li:nth-child(2) .txtWrap02{background: #152630;} 
+
+.txtWrap03{ background: #152630;position: absolute; bottom: 0; width: 234px; height: 65px; padding: 15px}
+.txtWrap03 p { display: block;color:#fff; float: left; font-size: 14px; font-weight: bold;}
+
+.txtWrap03 p.sm{font-size: 12px; width: 100%;}
+
+.section2 li:nth-child(3) .txtWrap03 {
+    opacity:0.7; 
+}
+
+.section2 li:nth-child(4) .txtWrap03 {
+   background: #44619d;
+}
+
+.section3 { width: 981px;margin: 0 auto;}
+.section3 li{
+    width: 234px; height: 240px; background: #000; 
+    float: left; margin-right: 15px;
+}
+.section3 li:last-child {margin-right: 0;}
 
 /*common*/
 

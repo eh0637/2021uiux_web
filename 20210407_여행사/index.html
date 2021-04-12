@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <title>여행사</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            var mySlider = $('.slider01').bxSlider({
+                
+            })
+        });
+    </script>
+    
 </head>
-<style>
-    
-    
-</style>
 <body>
 <header id="header"><!--100%-->
     <div class="headerWrap"><!--100%-->
         <div class="headerTop"><!--980-->
             <h1 class="logo"><a href="#">여행사</a></h1>
-       
-               
-                    <input type="text" placeholder="검색어를 입력하세요.">
-                    <span class="icon">검색</span>
-                
-           
+            <div class="searchWrap">
+                <form action="#">
+                    <label for="search">search</label>
+                    <input type="text" id="search" 
+                    placeholder="검색어를 입력하세요" class="inp-search">
+                    <input type="submit" value="bottom" class="btn-search">
+                </form>
+            </div>
+
             <div class="snssec">    
                 <ul class="clearfix">
                     <li><p>+82 0212345678</p></li>
@@ -46,11 +56,30 @@
         </div>
     </header>
     <div id="content">
-        <div class="section"><!--980-->
+        <div class="section clearfix"><!--980-->
             <div class="secLeft">
                 <div class="form">
-                    <ul class="slider ">
-                        <li></li>
+                    <ul class="slider">
+                        <li>
+                            <div class="formWrap">
+                                <form action="#">
+                                    <fieldset>
+                                        <legend>여행일정</legend>
+                                        <ul>
+                                            <li>
+                                                <label for="golo">가고싶은 나라를 선택하세요.</label>
+                                                <select name="golo" id="golo">
+                                                    <option value="">선택하세요</option>
+                                                    <option value="미국">미국</option>
+                                                    <option value="일본">일본</option>
+                                                    <option value="중극">중국</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="sec">
@@ -75,7 +104,7 @@
                 </div>
             </div>
             <div class="secRight">
-                <div class="sectxt1">
+                <div class="sectxt1 ">
                     <h2>TRAVELGO</h2>
                     <p>지금,여행이 떠나고 싶다면?<br>하이미디어와여행을떠나자!</p>
                 </div>
@@ -84,11 +113,54 @@
         </div>
         <div class="section2">
             <ul class="clearfix">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <ul class="slider01">
+                        <li>
+                            <img src="images/banner02_01.jpg" alt="">
+                            <div class="txtWrap02">
+                                <p>HILLTON HOTEL(PARIS)</p>
+                                <p class="star">★★★☆☆</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <img src="images/banner02_02.jpg" alt="">
+                            <div class="txtWrap02">
+                                <p>관광명소(디즈니랜드)</p>
+                                <p class="star">★★★☆☆</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="images/banner02_03.jpg" alt="">
+                    <div class="txtWrap03">
+                        <p>20℃구름조금</p>
+                        <p class="sm">습도60% 바람남남동2m/s</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/banner02_04.jpg" alt="">
+                    <div class="txtWrap03">
+                        <p>facebook여행후기</p>
+                        <p class="sm">(임정희님)</p>
+                    </div>
+                </li>
             </ul>
+        </div>
+        <div class="section3">
+           <ul class="clearfix">
+               <li>
+                   <img src="images/baaner03_01.jpg" alt="">
+                   <div class="txtWarp04">
+                       
+                   </div>
+               </li>
+           </ul>
+            
         </div>
     </div>
 
