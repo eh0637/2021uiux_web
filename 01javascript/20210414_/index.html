@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>object</title>
+</head>
+<body>
+
+<p id="data00"></p>
+
+
+<p id="data10"></p>
+
+
+<p id="data20"></p>
+
+<script>
+  let car1 = {name:"sonata",color:"red"}
+  let car = ["sonata","blue"];
+  let car2 = [
+    {
+      name:"sonata",
+      color:"green",
+      speed:100
+    },
+    {
+      name:"jeep",
+      color:"red",
+      speed:100
+    },
+    {
+      name:"passat",
+      color:"blue",
+      speed:100
+    }
+  ]
+
+  for(let i=0;i<car2.length;i++){
+    console.log(i)
+    document.getElementById("data"+i+"0").innerHTML = car2[i].name;
+  }
+</script>
+
+
+
+
+
+
+</body>
+</html>
