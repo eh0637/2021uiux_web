@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <style>
+    #gallery { width: 824px; margin: 0 auto; background: skyblue;}
+    #gallery{width: 824px; margin: 0 auto; background: skyblue;}
+    #gallery img{display: block;}
+    #image {width: 760px; margin: 0 auto;}
+    #image p {display: none;}
+
+    #thumbnail {width: 824px; }
+    #thumbnail > div { float: left;}
+    #thumbnail div.left,
+    #thumbnail div.right{
+      width: 32px; height: 95px;
+      display: flex; justify-content:center;
+      align-items: center; background: orange; cursor:pointer;
+    }
+    #thumbnail .container {
+      width: 760px; height: 95px; background: green;overflow: hidden;
+  }
+  #thumbnail  .container ul {width: 2280px; position: relative; left:0; }
+  #thumbnail  .container li{
+    float: left; width: 120px; margin-right:8px;
+  }
+  #thumbnail  .container li:nth-child(6n){margin-right: 0;}
+
+  </style>
+</head>
+
+<body>
+  <div id="gallery">
+    <div id="image">
+      <p style="display: block;"><img src="images/0.jpg" alt=""></p>
+      <p><img src="images/1.jpg" alt=""></p>
+      <p><img src="images/2.jpg" alt=""></p>
+      <p><img src="images/3.jpg" alt=""></p>
+      <p><img src="images/4.jpg" alt=""></p>
+      <p><img src="images/5.jpg" alt=""></p>
+      <p><img src="images/6.jpg" alt=""></p>
+      <p><img src="images/7.jpg" alt=""></p>
+      <p><img src="images/8.jpg" alt=""></p>
+      <p><img src="images/9.jpg" alt=""></p>
+      <p><img src="images/10.jpg" alt=""></p>
+      <p><img src="images/11.jpg" alt=""></p>
+      <p><img src="images/12.jpg" alt=""></p>
+      <p><img src="images/13.jpg" alt=""></p>
+      <p><img src="images/14.jpg" alt=""></p>
+      <p><img src="images/15.jpg" alt=""></p>
+      <p><img src="images/16.jpg" alt=""></p>
+      <p><img src="images/17.jpg" alt=""></p>
+    </div>
+    <!-- image -->
+    <div id="thumbnail" class="clearfix">
+      <div class="left"><img src="images/btn_left.gif" alt=""></div>
+      <div class="container">
+        <ul class="clearfix">
+          <li><img src="images/thumb1.jpg" alt=""></li>
+          <li><img src="images/thumb2.jpg" alt=""></li>
+          <li><img src="images/thumb3.jpg" alt=""></li>
+          <li><img src="images/thumb4.jpg" alt=""></li>
+          <li><img src="images/thumb5.jpg" alt=""></li>
+          <li><img src="images/thumb6.jpg" alt=""></li>
+          <li><img src="images/thumb7.jpg" alt=""></li>
+          <li><img src="images/thumb8.jpg" alt=""></li>
+          <li><img src="images/thumb9.jpg" alt=""></li>
+          <li><img src="images/thumb10.jpg" alt=""></li>
+          <li><img src="images/thumb11.jpg" alt=""></li>
+          <li><img src="images/thumb12.jpg" alt=""></li>
+          <li><img src="images/thumb13.jpg" alt=""></li>
+          <li><img src="images/thumb14.jpg" alt=""></li>
+          <li><img src="images/thumb15.jpg" alt=""></li>
+          <li><img src="images/thumb16.jpg" alt=""></li>
+          <li><img src="images/thumb17.jpg" alt=""></li>
+        </ul>
+      </div>
+      <!-- container -->
+      <div class="right"><img src="images/btn_right.gif" alt=""></div>
+    </div>
+    <!-- thumbnail -->
+  </div>
+  <!-- gallery -->
+</body>
+</html>
