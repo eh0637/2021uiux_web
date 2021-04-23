@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jquery</title>
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      console.log($("p").eq(1).css("background","skyblue") );
+      $("p").eq(2).css("color","red")
+      document.getElementsByTagName("p")[3].style.color = "blue";
+    });
+
+
+
+  </script>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Facilis cum explicabo iste itaque illum vitae dolore. Ad tenetur possimus,
+    facilis modi consectetur facere, reiciendis maiores, veritatis voluptate labore
+    fuga enim!</p>
+  <p>Fugit molestias aspernatur delectus autem quis eos eius facilis iste
+    natus ut! Facere veritatis provident dolor velit quia libero, repellat
+    repellendus debitis explicabo pariatur, cum, enim possimus. Aspernatur,
+    a autem!</p>
+  <p>Magni aliquid illum, doloremque minima facere quis odit repellendus
+    recusandae accusamus. Officia, neque alias expedita aut tempora animi id
+     tempore asperiores minus veniam unde harum, ut optio dolores soluta quidem?</p>
+  <p>Nam fugit minus minima officia, tempore officiis nisi nulla odit
+    aut quia quis ipsam, dolorum omnis qui alias! Esse fugiat blanditiis
+    inventore distinctio libero saepe autem tempora. Perspiciatis, voluptatibus
+     tempore.</p>
+  <p>Ex laudantium quos autem doloribus quod esse nisi. Officia reprehenderit,
+    sequi eaque ipsa veniam earum! Recusandae temporibus quod ea enim. Maiores
+    recusandae dolor quos, sint assumenda repellat inventore culpa aspernatur!</p>
+
+
+<ul class="tab">
+  <li>menu1</li>
+  <li>menu2</li>
+  <li>menu3</li>
+  <li>menu4</li>
+  <li>menu5</li>
+</ul>
+
+<div class="boxWrap">
+  <div class="box1">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, adipisci.</div>
+  <div class="box2">2. Soluta explicabo, nulla sint dolorum amet aut eaque dolorem maiores.</div>
+  <div class="box3">3. Quas sint amet nesciunt eligendi numquam temporibus, sequi enim aperiam.</div>
+  <div class="box4">4. Atque non doloribus, consectetur quae libero deleniti commodi, quis unde!</div>
+  <div class="box5">5. Facilis, animi, tenetur rem officia dolores ut ratione eos earum?</div>
+</div>
+
+<script>
+  // $(".tab>li").on("click",function(){})
+  // $(".boxWrap>div").hide();
+  // $(".boxWrap>div").eq(0).show();
+
+  $(".boxWrap>div").hide().eq(0).show();
+
+
+  $(".tab>li").click(function(){
+    // $(".tab>li").eq(0).css("background","pink");
+    $(".tab>li").css("background","white")
+    $(this).css("background","pink");
+    console.log($(this).index());
+
+    $(".boxWrap>div").hide().eq($(this).index()).show();
+
+// ($(this).index()) -> li의 몇번째
+
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

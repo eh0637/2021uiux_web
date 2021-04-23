@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <style>
+
+    ul.tab{ width: 1000px;margin: 0 auto;;}
+    li{float: left; width: calc( 1000px / 5 ); text-align: center; height: 30px;}
+      .boxWrap {width: 1000px; margin: 0 auto; border: 1px solid #000;}
+      .boxWrap div { padding: 20px;}
+  </style>
+</head>
+<body>
+  <ul class="clearfix tab">
+    <li>menu1</li>
+    <li>menu2</li>
+    <li>menu3</li>
+    <li>menu4</li>
+    <li>menu5</li>
+  </ul>
+  <div class="boxWrap">
+    <div class="box1">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque. consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque</div>
+    <div class="box2">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab unde fuga, blanditiis totam magni. consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque</div>
+    <div class="box3">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum cum, quasi sint minus eos, odio. consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque</div>
+    <div class="box4">4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia consectetur eveniet error reprehenderit nobis! consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque</div>
+    <div class="box5">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum molestiae debitis qui, harum. Obcaecati, consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque omnis?</div>
+  </div>
+<script>
+   $(".boxWrap>div").hide().eq(0).show();
+
+   $(".tab>li").click(function(){
+     $(".tab>li").css("background","initial");
+          // $(".tab>li").css("background","white");
+     $(this).css("background","skyblue");
+      // let t = $(this).index();
+      // $(".boxWrap div").hide().eq(t).fadeIn();
+     $(".boxWrap>div").hide().eq($(this).index()).fadeIn();
+   });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+  <!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <style>
+
+      ul.tab{ width: 1000px;margin: 0 auto;}
+      ul.tab li.active{ background:pink; }
+      ul.tab li:hover{background: skyblue;}
+      li{
+        float: left; width: calc( 1000px / 5 );
+        text-align: center; line-height: 40px; cursor:pointer;
+      }
+        .boxWrap {width: 1000px; margin: 0 auto; border: 1px solid #000;}
+        .boxWrap div { padding: 20px; display: none;}
+        .boxWrap div:nth-child(1) { display:block;}
+    </style>
+  </head>
+  <body>
+    <ul class="clearfix tab">
+      <li class="active">menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+      <li>menu5</li>
+    </ul>
+    <div class="boxWrap">
+      <div>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque. consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque</div>
+      <div>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ab unde fuga, blanditiis totam magni. consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque</div>
+      <div>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum cum, quasi sint minus eos, odio. consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque</div>
+      <div>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia consectetur eveniet error reprehenderit nobis! consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque</div>
+      <div>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum molestiae debitis qui, harum. Obcaecati, consectetur adipisicing elit. Consequuntur saepe libero similique! Excepturi, sapiente, cumque omnis?</div>
+    </div>
+
+
+
+    <script>
+      $(".tab li").click(function(){
+        let t = $(this).index();
+
+        $(".tab li").removeClass("active");
+        $(this).addClass("active")
+        $(".boxWrap div").hide().eq(t).fadeIn();
+      });
+
+    </script>
+
+  </body>
+  </html>

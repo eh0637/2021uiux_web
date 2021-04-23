@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <style>
+    .wrapper {width: 522px; margin: 0 auto;}
+    .wrapper li { float: left; width: calc( (522px - 30px ) / 4);}
+    li + li { margin-left: 10px;}
+    img {display: block;}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <ul class="clearfix">
+      <li><img src="../../images/btn1_1.jpg" alt="봄"></li>
+      <li><img src="../../images/btn2_1.jpg" alt="여름"></li>
+      <li><img src="../../images/btn3_1.jpg" alt="가을"></li>
+      <li><img src="../../images/btn4_1.jpg" alt="겨울"></li>
+    </ul>
+    <div class="ima">
+      <img src="../../images/spring.jpg" alt="">
+    </div>
+  </div>
+
+  <script>
+      const viewImg = [
+        "../../images/spring.jpg",
+        "../../images/summer.jpg",
+        "../../images/fall.jpg",
+        "../../images/winter.jpg"
+      ];
+
+      // $(".wrapper li").click(function(){
+      //   let t = $(this).index()
+      //   // $(".ima img").attr("src",viewImg[$(this).index()])
+      //   $(".ima img").attr("src",viewImg[t])
+      // });
+
+      for (let i=0; i<$(".wrapper li").length; i++){
+        console.log(i);
+        $(".wrapper li").eq(i).click(function(){
+          $(".ima img").attr("src",viewImg[i]);
+        });
+      };
+  </script>
+</body>
+</html>
