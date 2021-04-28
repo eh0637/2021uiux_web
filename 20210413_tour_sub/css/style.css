@@ -60,6 +60,7 @@ body{min-width:1200px;}
 		position: absolute;right:0;top:45px;
 		transform:translateY(-50%);
 	}
+
 	.sns>a{
 		width: 24px;height: 24px;display:block;float:left;
 		margin-left:5px;

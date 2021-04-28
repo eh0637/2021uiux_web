@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <style> #bar{ width: 500px; height: 10px; background-color: red;} #fish{ position: relative; width:80px; transform:rotateY(180deg);} </style>
+
+</head>
+<body>
+  <div id="dropingSelection"> <img src="https://t1.daumcdn.net/cfile/tistory/2637484856B21E3332" alt="물고기!" id="fish"> <div id="bar"></div> </div> <div id="nav"> <input type="button" value="시작" id="btnStart"><input type="button" value="멈춤" id="btnStop"> </div> 
+  <script> var moveOrNot = 0; <span style="color: rgb(189, 189, 189);">//물고기의 상태를 나타내는 변수이다. 1:정방향, 0:정지, -1:역방향</span> var beforemoveOrNot =0; //이전의 물고기 상태를 저장하는 변수 var position = 0; //현재 물고기의 위치를 나타내는 변수 var timerID =0; $("#btnStart").click(function(){ if (moveOrNot ==0) { //물고기가 움직이지 않는 상태에서만 작동 moveOrNot = beforemoveOrNot; //이전 상태를 불러와서 작동한다 timerID = setInterval(function(){ if (position == 300) { //물고기가 끝에 다다르면 moveOrNot = -1; //물고기가 역방향으로 이동한다 $("#fish").css("transform","rotateY(0deg)") //물고기 이미지를 뒤집는다 }else if (position == 0) {//물고기가 끝에 다다르면 moveOrNot = 1;//물고기가 정방향으로 이동한다 $("#fish").css("transform","")//물고기 이미지를 뒤집는다 } position+=5*moveOrNot; //물고기의 위치를 이동시킨다 $("#fish").css("left",position + "px") },50) //0.02초마다 이동 } }) $("#btnStop").click(function(){ if (moveOrNot !=0) { //물고기가 움직이는 상태에서만 작동 beforemoveOrNot = moveOrNot; //현재 물고기의 상태를 저장하고 moveOrNot = 0; //물고기상태 멈춤으로 설정 clearInterval(timerID) //인터벌 해제 } }) </script>
+
+
+</body>
+</html>

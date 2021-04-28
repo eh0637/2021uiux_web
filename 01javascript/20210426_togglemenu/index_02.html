@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>togglemenu</title>
-  <link rel="stylesheet" href="../../css/reset.css">
+  <title>Document</title>
   <script src="../../js/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="../../css/reset.css">
   <style>
   .toggleMenu{
     width: 50px;height: 50px;
@@ -21,7 +21,7 @@
     background: #000;
     border-radius:3px;
     position: absolute;
-    left:50%; transform:translateX(-50%);
+    left:50%;transform:translateX(-50%);
     transition:0.3s
   }
   .bar1{top:11px}
@@ -80,6 +80,7 @@
 
 
   </style>
+  </style>
 </head>
 <body>
   <div class="menuWrap">
@@ -104,69 +105,18 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nesciunt rerum temporibus consectetur, officia magni ad ex, minima sint repudiandae voluptates quas, architecto a at necessitatibus autem adipisci odit animi accusantium asperiores perferendis maiores. Ea itaque autem dolorem necessitatibus, vel magni excepturi quo quibusdam fugiat amet. Quaerat soluta vel, ut beatae itaque necessitatibus odio esse error similique. Unde quasi dolorem dolorum quaerat debitis illum est! Explicabo doloribus, voluptatem consectetur fuga sint accusamus earum eius, ipsam, mollitia cumque provident aliquid itaque beatae odio. Vel modi voluptatem sint minima consequuntur dicta rerum odio cupiditate mollitia, amet ab, provident. Illum consequuntur vitae recusandae vero suscipit accusamus fugit, ex officia voluptates incidunt, ipsa, repudiandae impedit. Qui harum, magni error corporis. Adipisci hic ut perspiciatis excepturi, eaque, fugit magni impedit aut. Similique saepe iste perspiciatis reiciendis blanditiis. Assumenda maxime, in officiis deserunt, dolore qui vero ad fugit voluptates commodi asperiores eos provident perferendis omnis quod mollitia, debitis aspernatur dolor minus! Veritatis illo inventore officiis earum ipsam iste nihil accusamus quam nemo necessitatibus, mollitia nulla ab nostrum, quibusdam rerum et quo sequi hic recusandae eligendi saepe, eum? Aut odio commodi tempore id. Eum nam suscipit nesciunt deleniti ullam sapiente praesentium incidunt excepturi dolore, consequuntur alias, deserunt qui natus. Natus sint possimus nesciunt labore aliquam debitis rerum, odit iste eos! Aspernatur iusto est, illum, assumenda debitis rem magnam quo, necessitatibus ex quisquam saepe nam incidunt explicabo, dignissimos deserunt. Aliquid impedit, quae, dolores velit dolore sit incidunt aperiam nemo a? Dignissimos odit inventore accusamus error molestias, assumenda alias voluptatibus, sint eveniet natus est minus. Eligendi rem nihil laborum soluta, quae, optio possimus blanditiis similique eveniet nesciunt velit obcaecati nam veniam veritatis adipisci praesentium nobis ut assumenda, temporibus ipsa labore perferendis ratione. Amet perferendis non sit voluptatum beatae explicabo esse cumque. Reprehenderit, magnam, nulla! Beatae sequi similique doloremque debitis mollitia. Repellat dolores, voluptates nisi libero hic debitis voluptatibus facilis, corrupti reiciendis nam aliquam vitae eos quo optio consectetur soluta perferendis inventore quidem at fugit. Saepe deserunt eos numquam itaque enim impedit assumenda quo, quisquam tenetur laborum, sint, dicta veniam? Qui dolor ullam non soluta natus blanditiis officia voluptas quod a tempore, libero animi voluptatibus sunt provident aliquid quo similique consequatur tenetur officiis impedit hic commodi! Minus totam harum praesentium autem culpa! Cumque vero quia, quasi iure explicabo quam debitis voluptatibus! Totam, minus laboriosam! Quisquam ad expedita sed blanditiis unde cumque alias necessitatibus nostrum. Provident corrupti nisi laudantium qui. Molestias iste recusandae beatae dolorum amet numquam eligendi voluptatem culpa, blanditiis, a explicabo repellat fuga non quo corporis officia consectetur illum et reprehenderit quidem ab! Consectetur animi similique debitis dolore qui quasi magni, ut, excepturi corporis ullam molestias sed, ea. Excepturi at odit aspernatur eaque maxime numquam. Repellendus veniam nemo deleniti nihil quia dolore minus, id consequuntur provident cum eligendi alias beatae. Beatae totam error quibusdam perspiciatis quam, provident eum doloribus necessitatibus ut aperiam repudiandae exercitationem consequatur nemo! Deserunt ad, quibusdam maxime excepturi dignissimos cupiditate eius ipsa veniam aliquid quisquam vel repellendus architecto vero reiciendis quaerat soluta? Optio id, quas voluptatem.
   </div>
 
-
-
-
-
-
-
   <script>
 
     $(".toggleMenu").click(function(){
-      const toggle = $(".toggleMenu").attr("class");  //get
+      const  toggle = $(".toggleMenu").attr("class");
       // alert(toggle)
       if(toggle == "toggleMenu"){
         $(".toggleMenu").addClass("change");
-        // $("#myTopMenu").css("left",0)
-        $("#myTopMenu").animate({top:0});
-
-      }else {
+      } else{
         $(".toggleMenu").removeClass("change");
-        // $("#myTopMenu").css("left","-100%")
-        $("#myTopMenu").stop().animate({top:"-100%"}); //"-100%" -> % 는 "" 표 해야함
       }
     });
-
-    $(window).resize(function(){
-      $("#myTopMenu").removeAttr("style");
-      $(".toggleMenu").removeClass("change");
-    });
-
   </script>
-  <!-- <script>
-
-    document.querySelector(".toggleMenu").addEventListener("click",function(){
-      const toggle = document.querySelector(".toggleMenu").getAttribute("class");
-      // alert(toggle)
-      if (toggle == "toggleMenu"){
-      document.querySelector(".toggleMenu").classList.add("change")
-    } else {
-        document.querySelector(".toggleMenu").classList.remove("change")
-      }
-
-
-    });
-
-  </script> -->
-
-  <!-- <script>
-    function down(){
-      const toggle = document.querySelector(".toggleMenu").getAttribute("class");
-      if (toggle == "toggleMenu"){
-      document.querySelector(".toggleMenu").classList.add("change")
-    } else {
-        document.querySelector(".toggleMenu").classList.remove("change")
-      }
-
-
-    }
-  </script> -->
-
-<script>
-
-</script>
-
-
 
 </body>
 </html>

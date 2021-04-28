@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .btn{ background: skyblue; width: 300px; text-align: center; margin-bottom: 10px;
+    border: 1px solid #000; border-radius:50%;}
+  </style>
+</head>
+<body>
+  <button onclick="window.open('https://www.naver.com/','naver','width=500,height=500')">네이버</button>
+  <div onclick="winOpen()" class="btn">다음창열기</div>
+  <div onclick="closeWin()" class="btn">닫기</div>
+  <div class="btn" onclick="uwinOpen()">영상보기</div>
+
+
+
+
+  <script>
+    let myWin;
+    function winOpen(){
+      myWin =  window.open("https://www.daum.net","daum","width=500,height=500")
+    }
+    function closeWin(){
+      myWin.close()
+    }
+    function uwinOpen(){
+      window.open("youtube.html","youtube","width=500, height=500")
+    }
+  </script>
+</body>
+</html>
