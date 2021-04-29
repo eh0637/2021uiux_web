@@ -20,12 +20,17 @@
         pager:false
 
       });
-      $(".nextBtn").click(function(){
+      $('.nextBtn').click(function(){
         mySlider.goToNextSlide();
         });
-      $(".prevBtn").click(function(){
+      $('.prevBtn').click(function(){
         mySlider.goToPrevSlide();
         });
+      $('.modSlider').bxSlider({
+        auto:true,
+        controls:false,
+        pager:false
+      });
 
       $(".toggleMenu").click(function(){
         const toggle = $(".toggleMenu").attr("class");
@@ -90,6 +95,13 @@
         <div class="prevBtn">
           <img src="images/prev.png" alt="">
         </div>
+    </div>
+    <div class="moSliderM">
+      <ul class="modSlider">
+        <li><img src="images/mbx00.png" alt=""></li>
+        <li><img src="images/mbx01.png" alt=""></li>
+        <li><img src="images/mbx02.png" alt=""></li>
+      </ul>
     </div>
 
   </header>

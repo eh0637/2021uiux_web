@@ -13,13 +13,33 @@
       top: 100px; right: 100px; background: skyblue;
       padding: 10px;
     }
-    .nav{}
+    .nav { height: 100px; background: orange; transition: 0.3;}
     .nav li{
        float: left; width: 20%; text-align: center; line-height: 40px;
        background: orange; cursor:pointer
     }
     .nav li:hover { background: green; }
-    .nav.fixed{position: fixed; width: 100%; top: 0;}
+    .nav.fixed{position: fixed; width: 100%; top: 0; height: 50px;}
+
+    #car1{position: absolute; top: 1300px; left: 0; transition: 0.3s; opacity: 0;}
+    #car2{position: absolute; top: 1500px; right: 0; transition: 0.3s; opacity: 0;}
+    #car1.move{left: 300px; opacity: 1;}
+    #car2.move1{right: 300px; opacity: 1;}
+
+    .top{
+      position: fixed;
+      width: 100px; height: 100px;
+      background: gray; right: 50px;bottom: 50px;
+      border-radius:50px ;
+      display: flex; justify-content: center; align-items: center;
+      /* animation-name: viewTop; */
+      animation:viewTop 1s infinite alternate;
+      cursor: pointer; opacity:0; transition: 0.3s;
+    }
+    .top.view{opacity: 1;}
+    @keyframes viewTop {
+      to{transform: translateY(-20px);}
+    }
   </style>
   <script>
     $(document).ready(function(){
@@ -27,6 +47,9 @@
 
 
       const menuPos = $(".nav").offset().top;
+      const car1Pos = $("#car1").offset().top;
+      const car2Pos = $("#car2").offset().top;
+      const topPos = $(".top").offset().top;
 
       $(".menuPos").html( menuPos + "px")
       $(window).scroll(function(){
@@ -41,6 +64,25 @@
         }else {
           $(".nav").removeClass("fixed")
         }
+        if(car1Pos < scrollY + 300){
+          $("#car1").addClass("move")
+        }else {
+          $("#car1").removeClass("move")
+        }
+        if(car2Pos < scrollY + 100){
+          $("#car2").addClass("move1")
+        }else {
+          $("#car2").removeClass("move1")
+        }
+        if(scrollY > topPos - 500 ){
+          $(".top").addClass("view")
+        }else {
+          $(".top").removeClass("view")
+        }
+      });//scroll
+
+      $(".top").click(function(){
+        $("html,body").animate({scrollTop:0},1000);
       });
     });
   </script>
@@ -119,6 +161,7 @@
   <p>58</p>
   <p>59</p>
   <p>60</p>
+  <img src="../../images/car.png" alt="" id="car2">
   <p>61</p>
   <p>62</p>
   <p>63</p>
@@ -137,6 +180,7 @@
   <p>76</p>
   <p>77</p>
   <p>78</p>
+  <img src="../../images/car.png" alt="" id="car1">
   <p>79</p>
   <p>80</p>
   <p>81</p>
@@ -159,5 +203,6 @@
   <p>98</p>
   <p>99</p>
   <p>100</p>
+  <div class="top">top</div>
 </body>
 </html>
