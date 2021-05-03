@@ -66,23 +66,25 @@ font-weight: bold; color: #202020; padding-left: 40px;}
 .nextBtn { right:70px; }
 .prevBtn {left: 70px;}
 
-.toggleMenu { width: 30px; height: 24px; border: 1px solid #000;
-   position: relative;
-   cursor:pointer;
-   }
-.toggleMenu div {
-  width: 30px; height: 4px;
-  background: #0E347E;
-  border-radius:2px;
+.toggleMenu{
+  width: 50px;height: 50px;
+  border: 1px solid #000;
   position: absolute;
-
+  cursor:pointer;
+  right: 0;top: 0;
+  /* display: none; */
 }
-
-.modSlider {margin: 0 auto;}
-
-.bar1{top:0px}
-.bar2{top:10px;}
-.bar3{top:20px;}
+.toggleMenu div{
+  width: 34px;height: 5px;
+  background: #000;
+  border-radius:3px;
+  position: absolute;
+  left:50%; transform:translateX(-50%);
+  transition:0.3s
+}
+.bar1{top:11px}
+.bar2{top:22px;}
+.bar3{top:33px;}
 
 .toggleMenu.change .bar1{
   left:50%;top:50%;transform:translate(-50%,-50%) rotate(-45deg)
@@ -93,16 +95,23 @@ font-weight: bold; color: #202020; padding-left: 40px;}
 .toggleMenu.change .bar3{
   left:50%;top:50%;transform:translate(-50%,-50%) rotate(45deg)
 }
-
-@media screen and (max-width:570px){
   body{background: green;}
+@media screen and (max-width:570px){
+body{background: blue;}
   /* .sliderM { display: none;}
   .moSliderM {display: block;} */
 
+      .menuWrap{width: 100%;}
+      .toggleMenu{display: block;}
+      .menuTop{
+        position: fixed; width: 80%;height: 100%;
+        background:#fff;right:0;top:-100%;
+         display:flex; justify-content: center;align-items: center;
 
-  }
+        transition:0.3s;
+      }
+      .menuTopN{background:#fff;width: 100%; top: 10px;}
+      .menuTopN li {float:initial !important; }
 
-  @media screen and (min-width:571px){
-    /* .moSliderM {display: none;}+
-    .sliderM { display: block;} */
+
   }

@@ -34,19 +34,22 @@
 
       $(".toggleMenu").click(function(){
         const toggle = $(".toggleMenu").attr("class");
-
-        if( toggle == "toggleMenu"){
+        
+        if(toggle == "toggleMenu"){
           $(".toggleMenu").addClass("change");
-          $(".menuTop").animate({left:0});
+
+          $(".menuTop").animate({top:0});
+
         }else {
           $(".toggleMenu").removeClass("change");
-          $(".menuTop").stop().animate({left:"-100%"});
-        };
-        $(window).resize(function(){
-          $(".menuTop").removeAttr("style");
-          $(".toggleMenu").removeClass("change");
-        });
 
+          $(".menuTop").stop().animate({top:"-100%"});
+        }
+      });
+
+      $(window).resize(function(){
+        $(".menuTop").removeAttr("style");
+        $(".toggleMenu").removeClass("change");
       });
 
     });
