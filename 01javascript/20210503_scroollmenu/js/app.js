@@ -33,12 +33,12 @@ $(document).ready(function(){
 //    $("html,body").animate({scrollTop:st});
 // })
 //
-$(".menu>a").click(function(){
-  let target = (this.hash);
-  console.log(target);
-  const st = target.offset().top;
-  $("html,body").animate({scrollTop:st})
-});
+// $(".menu>a").click(function(){
+//   let target = (this.hash);
+//   console.log(target);
+//   const st = target.offset().top;
+//   $("html,body").animate({scrollTop:st})
+// });
 
 
 
@@ -54,15 +54,22 @@ $(window).scroll(function(){
   // if(scrollY >= $(".scene").eq(2).offset().top){
   //     $(".menu>a").removeClass("active").eq(2).addClass("active")
   //   }
+  //
+  // for(let i=0; i< $(".scene").length; i++){
+  //   if(scrollY >= $(".scene").eq(i).offset().top){
+  //     $(".menu>a").removeClass("active").eq(i).addClass("active")
+  //   }
+  //
+  //   }
 
-  for(let=i; i< $(".scene").length; i++){
-    if(scrollY >= $(".scene").eq(i).offset().top){
-      $(".menu>a").removeClass("active").eq(i).addClass("active")
+  $(".scene").each(function(index){
+    // if(scrollY >= $(".scene").eq(index).offset().top){}
+    if(scrollY >= $(this).offset()top){
+      $(".menu>a").removeClass("active").eq(index).addClass("active");
     }
+  });
 
-    });
-
-});
+}); //scroll
 
 
 
