@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+header{display: flex; justify-content: center; height: 100px;}
+.container {display:flex; width: 1000px; justify-content: space-between; _background: skyblue;}
+.logo {display: flex; align-items: center;}
+.menu   { display: -webkit-flex;
+display: -ms-flex;
+display: flex; align-items: center;}
+.menu ul {display: flex; }
+.menu ul a { padding: 15px; display: block;}
+.menu ul a:hover { background: orange;}
+.mobile_menu{display: none; _background: skyblue; width: 30px; height: 30px;cursor: pointer;}
+
+.banner{
+  background-image: url(../images/banner/tony-stark-poster.jpg);
+  background-position:center; background-size: cover; height: 600px;
+  display: flex; justify-content:center;
+}
+.banner_txt {
+  _background: skyblue;color: #fff;
+  justify-content: center; align-items: flex-end;
+  flex: 1; display: flex;  flex-direction: column;
+}
+.banner_txt h2{ width: 410px; margin-bottom: 10px;}
+.banner_txt p{ width: 410px;}
+
+.column { -webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;}
+.banner_option { display: flex; background: #f00; }
+
+.banner_option > div { padding: 15px; color: #fff; flex: 1; }
+.banner_txt { font-weight: bold; font-size: 1.2rem ; margin-bottom: 10px;}
+.banner_option a { color: #fff; }
+.banner_option a:hover { border-bottom: 1px solid #fff;}
+
+
+@media screen and (max-width:700px) {
+
+    header{ height: 60px;}
+  .menu ul{display: none;}
+.mobile_menu { margin-right: 16px; display:flex; flex-direction: column; justify-content: space-around;}
+.mobile_menu_line {
+    height: 4px; background: #000;
+    border-radius: 2px;
+  }
+ .logo { margin-left: 16px; }
+ .logo img{ width: 100px;}
+  .banner_txt { justify-content: center; align-items:center; text-align: center;
+  }
+
+
+}

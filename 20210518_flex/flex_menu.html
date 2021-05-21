@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .menu{display: flex; height: 100vh;}
+  .menu_item{
+    flex:1;
+    /* width: 25%; */
+    background: gold; transition:0.3s;
+  }
+  .menu_item:hover{
+    background: skyblue;
+    flex:1.5;
+    /* width: 30%; */
+  }
+  .menu_item a{
+    height: 100vh;
+    display: flex; _line-height: 40px; text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width : 700px) {
+    .menu{flex-direction: column;}
+    .menu_item a{height: 25vh;}
+
+  }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div class="menu_item"><a href="#">MENU1</a></div>
+    <div class="menu_item"><a href="#">MENU2</a></div>
+    <div class="menu_item"><a href="#">MENU3</a></div>
+    <div class="menu_item"><a href="#">MENU4</a></div>
+  </div>
+
+</body>
+</html>

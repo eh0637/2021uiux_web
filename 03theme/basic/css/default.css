@@ -68,7 +68,7 @@ border:1px solid #558ab7 !important;
 .hd_pops_footer .hd_pops_close {background:#393939;position:absolute;top:0;right:0}
 
 /* 상단 레이아웃 */
-#hd {background:#212020}
+#hd {}
 #hd_h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 
 #tnb {border-bottom:1px solid #383838;margin:0 auto}
@@ -444,3 +444,26 @@ box-sizing:content-box;
 
 /* Mobile화면으로 */
 #device_change {display:block;margin:0.3em;padding:0.5em 0;border:1px solid #eee;border-radius:2em;background:#fff;color:#000;font-size:2em;text-decoration:none;text-align:center}
+
+
+
+
+
+
+/* subVisual */
+.subVisual{height: 200px; background: skyblue;}
+.subVisual #page_title {
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex; justify-content: center; align-items: center;
+}
+.subVisual .subImg.subTopBg_01{
+  background: blue; background-image: url(../img/pc01.jpg);
+  background-position: center; background-repeat: no-repeat; background-size: cover;}
+.subVisual .subImg.subTopBg_02{ background: green;
+  background-image: url(../img/pc02.jpg); 
+  background-position: center; background-repeat: no-repeat; background-size: cover;}
+.subVisual .subImg.subTopBg_03{ background: orange;
+  background-image: url(../img/pc03.jpg);
+  background-position: center; background-repeat: no-repeat; background-size: cover;}
